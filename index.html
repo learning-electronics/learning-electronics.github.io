@@ -1,11 +1,471 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Body
-</body>
-</html> 
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Learning-electronics</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Learning-electronics
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link">Documentos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Equipa</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contactos</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Learning-electronics: A new way of learning
+                        </h1>
+                        <p class="home__description">
+                            A Learning-electronics é uma plataforma web para a aprendizagem de Análise e Síntese de Circuitos Eletrónicos
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="assets/img/about.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Sobre o projeto
+                        </h2>
+
+                        <p class="about__description">
+                            We have over 4000+ unbiased reviews and our customers 
+                            trust our plant process and delivery service every time
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always deliver on time.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We give you guides to protect and care for your plants.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always come over for a check-up after sale.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                100% money back guaranteed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                <br>
+                
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        A nossa plataforma tem três vertentes
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">Aluno</div>
+                            <p class="steps__card-description">
+                                O aluno poderá realizar vários quizzes sobre circuitos eletrónicos.
+                                <br>
+                                Estes podem estar em formato de teste ou em formato ludico através de jogos e desafios.
+                                <br>
+                                O aluno também terá acesso ao conteúdo de aprendizagem em formato de biblioteca.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">Docente</div>
+                            <p class="steps__card-description">
+                                O docente poderá adicionar conteúdo de aprendizagem (exercícios).
+                                <br>
+                                Poderá lançar quizzes, avisos de testes e desafios verificando o progresso e as estátisticas dos alunos.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">Turma</div>
+                            <p class="steps__card-description">
+                                As turmas podem ser criadas por docentes.
+                                <br>
+                                Deste modo, uma turma está associada a um docente e a sua cadeira, podendo este gerar avisos de avaliações à cadeira.
+                                <br>
+                                Os alunos podem realizar desafios entre a turma e observar o desempenho com uma leaderboard.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <br>
+            <br>
+            <br>
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                    Milestones
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    My flowers are falling off or dying?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes leaves to become pale?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes brown crispy leaves?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do i choose a plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I change the pots?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Why are gnats flying around my plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== TEAM ====================-->
+            <section class="product section container" id="products">
+                <h2 class="section__title-center">
+                    A nossa equipa
+                </h2>
+
+                <div class="product__container grid">
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/andre.png" alt="" class="product__img">
+
+                        <h3 class="product__title">André Clérigo</h3>
+                        <span class="product__price">Aluno</span>
+
+                        <a href="https://github.com/andreclerigo" target="_blank" class="button--flex product__button">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/carlos.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Carlos Costa</h3>
+                        <span class="product__price">Aluno</span>
+
+                        <a href="https://github.com/carlosrjpcosta" target="_blank" class="button--flex product__button">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/claudio.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Cláudio Asensio</h3>
+                        <span class="product__price">Aluno</span>
+
+                        <a href="https://github.com/ClaudioAsensio" target="_blank" class="button--flex product__button">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/edgar.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Edgar Sousa</h3>
+                        <span class="product__price">Aluno</span>
+
+                        <a href="https://github.com/EdgarSousa" target="_blank" class="button--flex product__button">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/hugo.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Hugo Domingos</h3>
+                        <span class="product__price">Aluno</span>
+
+                        <a href="https://github.com/Hugo-Domingos" target="_blank" class="button--flex product__button">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/tiago.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Tiago Marques</h3>
+                        <span class="product__price">Aluno</span>
+
+                        <a href="https://github.com/Tiagura" target="_blank" class="button--flex product__button">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </article>
+                    
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/john_doe.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Helder Zagalo</h3>
+                        <span class="product__price">Orientador</span>
+
+                        <a href="https://www.linkedin.com/" target="_blank" class="button--flex product__button">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/john_doe.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Nuno Matos</h3>
+                        <span class="product__price">Co-orientador</span>
+
+                        <a href="https://www.linkedin.com/" target="_blank" class="button--flex product__button">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </article>
+                    </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Contactos
+                        </h2>
+                    </div>
+
+                    <form action="http://formspree.io/xlezevyp" class="contact__form" method="post">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " name="_replyto" class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " name="message" class="contact__input">
+                                <label for="" class="contact__label">Assunto</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Mensagem</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="button button--flex">
+                            Enviar
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content" style="width: 21.875rem;">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Learning-electronics
+                    </a>
+
+                    <h3 class="footer__title">
+                        Uma plataforma web para a aprendizagem de Análise e Síntese de Circuitos Eletrónicos
+                    </h3>
+                </div>
+
+                <div class="footer__content">
+                    <ul class="footer__data" style="margin-bottom: var(--mb-2);"></ul>
+                    <a href="https://www.ua.pt/pt/" target="_blank" style="width: 200px">
+                        <img src="assets/img/ua.png" alt="">
+                    </a>
+                </div>
+
+                <div class="footer__content">
+                    <ul class="footer__data" style="margin-bottom: var(--mb-2);"></ul>
+                    <a href="https://www.ua.pt/pt/deti/" target="_blank" style="width: 21.875rem">
+                        <img src="assets/img/deti.png" alt="" style="filter: invert(0.5);">
+                    </a>
+                </div>
+
+                <div class="footer__content"></div>
+            </div>
+            
+            <p class="footer__copy">
+                Um projeto open-source disponível no&nbsp;
+                <a href="https://github.com/learning-electronics" target="_blank" style="filter: invert(0.5);">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <br>
+                &#169; 2021 - 2022 | Template retirado da Bedimcode
+            </p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
