@@ -411,7 +411,7 @@ the website, in dark theme
 }
 
 .about__img{
-  width: 280px;
+  width: 350px;
   justify-self: center;
 }
 
@@ -867,10 +867,10 @@ the website, in dark theme
   }
 
   .home__img{
-    width: 180px;
+    width: 280px;
   }
   .home__title{
-    font-size: var(--h1-font-size);
+    font-size: var(--big-font-size);
   }
 
   .steps__bg{
@@ -942,7 +942,7 @@ the website, in dark theme
     align-items: center;
   }
   .home__img{
-    width: 280px;
+    width: 380px;
     order: 1;
   }
   .home__social{
@@ -980,13 +980,14 @@ the website, in dark theme
     padding: 13rem 0 5rem;
   }
   .home__img{
-    width: 350px;
+    width: 400px;
   }
   .home__description{
     padding-right: 7rem;
   }
 
   .about__img{
+    margin-top: 4.5rem;
     width: 380px;
   }
 
@@ -1064,7 +1065,7 @@ the website, in dark theme
   }
 
   .about__container{
-    column-gap: 7rem;
+    column-gap: 3rem;
   }
 
   .scrollup{
